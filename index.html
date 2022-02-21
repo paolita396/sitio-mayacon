@@ -16,9 +16,9 @@
           font-family: 'Quicksand', sans-serif;
             /*font-family: 'Mochiy Pop P One', sans-serif;*/
         }
-        .bg-nav-social{
+        /*.bg-nav-social{
             background-image: radial-gradient(circle at 44.2% 116.31%, #90d027 0, #6cc61f 25%, #39b814 50%, #00aa0e 75%, #009e16 100%);
-        }
+        }*/
 
         .items-ads{
           color: black;
@@ -54,7 +54,7 @@
         overflow: hidden;
         }
 
-        header video {
+        header #video {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -91,17 +91,34 @@
             }
         }
 
+        #banner{
+            background: url('/assets/img/lona-origin.png') no-repeat;
+            background-size: 100%;
+        }
+
+        #slogan{
+            font-size: 62px;
+            margin-left: 93px
+        }
+
+        p.header-site{
+            font-size: 18px;
+            padding-top: 38px;
+        }
+
     </style>
 </head>
 <body>
-    <section class="container-fluid">
-        <div class="row justify-content-center bg-nav-social  pb-3">
-            <div class="col-sm-6 pt-4">
-                <p class="text-white header-site"><i class="fas fa-phone text-white ml-3"></i> Servicio a clientes:</h4>
-                  <a href="tel:9818110449" style="color:white">981 81 1 04 49</a> -  <a href="tel:9811369004"  style="color:white">981 136 90 04</a>
-            </div>
-            <div class="col-sm-4 pt-3">
+    <section id="banner" class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-sm-12 pt-3">
                 <a class="btn btn-link bt-sm float-right" target="_blank" href="https://www.facebook.com/mayaconinternet"><i class="fab fa-facebook text-white fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-fill bd-highlight"><p class="text-white header-site"><i class="fas fa-phone text-white ml-3"></i> Servicio a clientes: <a href="tel:9818110449" style="color:white">981 81 1 04 49</a> -  <a href="tel:9811369004"  style="color:white">981 136 90 04</a></p></div>
+            <div class="p-2 flex-fill bd-highlight">
+                <h2 id="slogan" class="text-white" style="text-shadow: 0.1em 0.1em #333">Internet & Fibra Óptica</h2>
             </div>
         </div>
     </section>
@@ -120,29 +137,18 @@
                       <div class="dropdown-menu">
                         <a class="btn btn-sm dropdown-item" href="#">Empresa</a>
                         <a class="btn btn-sm dropdown-item" href="#">Sucursales</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Clientes</a>
                         <a class="btn btn-sm dropdown-item" href="#">Galería</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Cobertura</a>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Servicios</a>
-                      <div class="dropdown-menu">
-                        <a class="btn btn-sm dropdown-item" href="#">Action</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Another action</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="btn btn-sm dropdown-item" href="#">Separated link</a>
+                        <a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Cobertura</a>
+                          <div class="dropdown-menu">
+                              <a class="btn btn-sm dropdown-item" href="/modules/cobertura_residencial.html">Residencial</a>
+                              <a class="btn btn-sm dropdown-item" href="/modules/cobertura_empresarial.html">Empresarial</a>
+                          </div>
                       </div>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Atención a clientes</a>
                       <div class="dropdown-menu">
                         <a class="btn btn-sm dropdown-item" href="#">Contacto</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Contrataciones</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Pagos</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Preguntas frecuentes</a>
-                        <a class="btn btn-sm dropdown-item" href="#">Corporativo</a>
                       </div>
                     </li>
                     
@@ -156,9 +162,10 @@
         <div class="overlay"></div>
     
         <!-- The HTML5 video element that will create the background video on the header -->
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="assets/video/mayacon_video.mp4" type="video/mp4">
-        </video>
+        </video>-->
+        <img id="video" src="/assets/img/background-head.jpeg" class="img-fluid" alt="">
     
         <!-- The header content -->
         <div class="container h-100">
