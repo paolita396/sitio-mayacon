@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mayacon - Cobertura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,800;1,300&family=Mochiy+Pop+P+One&family=Quicksand:wght@506;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/pluggins/fontawesome/css/all.min.css">
+    <style>
+
+body{
+            font-family: 'Quicksand', sans-serif;
+            /*font-family: 'Mochiy Pop P One', sans-serif;*/
+        }
+        /*.bg-nav-social{
+            background-image: radial-gradient(circle at 44.2% 116.31%, #90d027 0, #6cc61f 25%, #39b814 50%, #00aa0e 75%, #009e16 100%);
+        }*/
+
+        .items-ads{
+            color: black;
+            font-style:italic;
+            font-size:35px;
+            font-weight:bold;
+            top: -50px;
+            right: -25px;
+            z-index: 3;
+            transition: transform .2s;
+            height: 322px;
+        }
+
+
+
+        .items-ads:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+            z-index: 4;
+        }
+
+        #myVideo{
+            display: block;
+            object-fit: cover;
+        }
+
+        header {
+            position: relative;
+            background-color: black;
+            height: 75vh;
+            min-height: 25rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        @media (pointer: coarse) and (hover: none) {
+            .header_video video {
+                display: none;
+            }
+        }
+
+        #banner{
+            background: url('/assets/img/lona-origin.png') no-repeat;
+            background-size: 100%;
+        }
+
+        #slogan{
+            font-size: 62px;
+            margin-left: 93px
+        }
+
+        p.header-site{
+            font-size: 18px;
+            padding-top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+<section id="banner" class="container-fluid">
+    <div class="row justify-content-end">
+        <div class="col-sm-12 pt-3">
+            <a class="btn btn-link bt-sm float-right" target="_blank" href="https://www.facebook.com/mayaconinternet"><i class="fab fa-facebook text-white fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="d-flex bd-highlight">
+        <div class="p-2 flex-fill bd-highlight"><p class="text-white header-site"><i class="fas fa-phone text-white ml-3"></i> Servicio a clientes: <a href="tel:9818110449" style="color:white">981 81 1 04 49</a> -  <a href="tel:9811369004"  style="color:white">981 136 90 04</a></p></div>
+
+    </div>
+</section>
+<section class="row justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="col-sm-10">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="/index.html">
+                <img src="../assets/img/LOGO_MAYACON.png" width="300" height="100" alt="">
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="btn btn-sm" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Nosotros</a>
+                    <div class="dropdown-menu">
+                        <a class="btn btn-sm dropdown-item" href="/index.html">Empresa</a>
+                        <a class="btn btn-sm dropdown-item" href="/modules/sucursales.html">Sucursales</a>
+                        <a class="btn btn-sm dropdown-item" href="#
+                        ">Galería</a>
+                        <a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Cobertura</a>
+                        <div class="dropdown-menu">
+                            <a class="btn btn-sm dropdown-item" href="/modules/cobertura_residencial.html">Residencial</a>
+                            <a class="btn btn-sm dropdown-item" href="/modules/cobertura_empresarial.html">Empresarial</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="btn btn-sm dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Atención a clientes</a>
+                    <div class="dropdown-menu">
+                        <a class="btn btn-sm dropdown-item" href="#">Contacto</a>
+                        <a class="btn btn-sm dropdown-item" href="https:/wisphub.net/solicitar-instalacion/mayacon1/">Contratación</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section class="container-fluid mt-4 mb-5">
+    <div class="card">
+        <div class="card-header">
+            <h3><i class="fa-solid fa-building"></i> Empresa</h3>
+        </div>
+        <div class="card-body">
+            <div class="card mb-3" >
+                <div class="row no-gutters">
+
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="d-flex flex-column bd-highlight mb-3">
+                            <div class="p-2 bd-highlight">
+                                <h5 class="text-dark font-weight-bold"> Historia</h5>
+                                <article>
+                                    Empresa campechana líder en internet, tecnología y soluciones en telecom.
+                                    Con 5 años de experiencia en el ramo. Llevando la tecnología al interior del estado,
+                                    acortando la brecha digital y conectando lo inconectable.
+                                </article>
+                             </div>
+                            <div class="p-2 bd-highlight">
+                                <h5 class="text-dark font-weight-bold"> Misión</h5>
+                                <article>
+                                    Consolidar los servicios que ofrece la empresa apoyados en la red de infraestructura física y sistemática que soporta nuestra gama de servicios, 
+                                    buscando continuamente la satisfacción total de los clientes y usuarios, garantizando la permanencia de los mismos en el consumo de nuestros productos
+                                    y soluciones de alta tecnología, con una política integral enfocada hacia la mejora continua.
+                                </article>
+                                </div>
+                                
+                            <div class="p-2 bd-highlight">
+                                <h5 class="text-dark font-weight-bold"> Visión </h5>
+                                <article>
+                                    Desarrollar soluciones en el área de la informática y telecomunicaciones de acuerdo a las necesidades de nuestros clientes con tecnología de punta
+                                    y con la optimización de recursos existentes de ellos mismos, convirtiéndonos así en socios comerciales y elemento de mejora continua
+                                    dentro de su organización, logrando ser líderes en el área de redes, conectividad, telecomunicaciones y vigilancia, así como Consultoría y Servicios de Soporte Técnico
+                                    y Misión Crítica para cualquier nivel de operación que sea requerido en el país.
+                                </article>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="../assets/img/galeria3tt.jpg" class="img-fluid" alt="responsive">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="container-fluid mt-4 mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="fa-solid fa-building text-black"></i> Empresa</h4>
+                </div>
+
+
+    
+    <div 
+    class="elementor-tab-title elementor-tab-mobile-title elementor-active" data-tab="1" role="tab">Historia
+    </div>
+        <div id="elementor-tab-content-1701" class="elementor-tab-content elementor-clearfix elementor-active" data-tab="1" role="tabpanel" aria-labelledby="elementor-tab-title-1701" style="display: block;">
+        <p>Empresa campechana líder en internet, tecnología y soluciones en telecom.
+        Con 5 años de experiencia en el ramo. Llevando la tecnología al interior del estado,
+        acortando la brecha digital y conectando lo inconectable.</p>
+        </div>
+            <div class="elementor-tab-title elementor-tab-mobile-title" data-tab="2" role="tab">Misión</div>
+                <div id="elementor-tab-content-1702" class="elementor-tab-content elementor-clearfix" data-tab="2" role="tabpanel" aria-labelledby="elementor-tab-title-1702">
+                    <p>Consolidar los servicios que ofrece la empresa apoyados en la red de infraestructura física y sistemática que soporta nuestra gama de servicios, 
+                        buscando continuamente la satisfacción total de los clientes y usuarios, garantizando la permanencia de los mismos en el consumo de nuestros productos
+                        y soluciones de alta tecnología, con una política integral enfocada hacia la mejora continua.
+                    </p></div>
+                    <div class="elementor-tab-title elementor-tab-mobile-title" data-tab="3" role="tab">Visión</div>
+                        <div id="elementor-tab-content-1703" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-1703">
+                            <p>Desarrollar soluciones en el área de la informática y telecomunicaciones de acuerdo a las necesidades de nuestros clientes con tecnología de punta
+                                y con la optimización de recursos existentes de ellos mismos, convirtiéndonos así en socios comerciales y elemento de mejora continua
+                                dentro de su organización, logrando ser líderes en el área de redes, conectividad, telecomunicaciones y vigilancia, así como Consultoría y Servicios de Soporte Técnico
+                                y Misión Crítica para cualquier nivel de operación que sea requerido en el país.
+                            </p>
+                                     </div>
+
+                                     <div class="elementor-tab-title elementor-tab-mobile-title" data-tab="3" role="tab">Valores</div>
+                        <div id="elementor-tab-content-1703" class="elementor-tab-content elementor-clearfix" data-tab="3" role="tabpanel" aria-labelledby="elementor-tab-title-1703">
+                            <p>Nuestra Empresa opera con amplios criterios de comportamiento como empresa con sus clientes, proveedores 
+                                e incluso con la competencia, marcando su línea de actuación y sus principios éticos mediante la práctica
+                                constante de los siguientes valores: 
+                            </p>
+                            <ul>
+                                <li>Responsabilidad Social</li>
+                                <li>Honestidad</li>
+                                <li>Calidad</li>
+                                <li>Adaptabilidad</li>
+                                <li>Constancia</li>
+                    
+                            </ul>
+                                     </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+               
+
+
+                <footer class="footer dark-mode bg-dark pt-5 pb-4 pb-lg-5">
+                    <div class="container pt-lg-4">
+                        <div class="row pb-5">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+                                    <img src="../assets/img/OTROLOGO.png" width="300" height="110" alt="Silicon">
+                                    Silicon
+                                </div>
+                                <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Empresa dedicada a proveer servicios de internet.</p>
+                               
+                            </div>
+                            <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h6 class="mb-2">
+                                            <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                                        </h6>
+                                        <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                                            <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2"></a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Our</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">}}}}</a></li>
+                                            </ul>
+                                            <ul class="nav flex-column mb-2 mb-lg-0">
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-3">
+                                        <h6 class="mb-2">
+                                            <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                                        </h6>
+                                        <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                                            <ul class="nav flex-column mb-2 mb-lg-0">
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                                                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                                        <h6 class="mb-2">Contact Us</h6>
+                                        <a href="mailto:email@example.com" class="fw-medium"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+                            <span class="text-light opacity-50">MAYACON</span>
+                            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener"></a>
+                        </p>
+                    </div>
+                </footer>
+                
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+                
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                
+                        var containerItemsAdds = $('body .items-ads');
+                
+                        /* si quieres cambiar las url solo pon la correcta en donde debe de ir*/
+                        var backgroundsImagesAdds = {
+                            item_1 : {display:true,url : 'assets/img/LOGO_MAYACON.png',color:''},
+                            item_2 : {display:false,url : 'assets/img/LOGO_MAYACON.png',color:'#90d027'},
+                            item_3 : {display:true,url : 'assets/img/LOGO_MAYACON.png',color:''},
+                        }
+                
+                        $('#see-video').click(function () {
+                            console.log('functionando...');
+                            var src = 'https://www.youtube.com/embed/YVlcKniVNTk';
+                            $('iframe').attr('src', src);
+                        });
+                
+                        const loaditems = () => {
+                            $(containerItemsAdds).each(function(e){
+                                var target = $(this).attr('id');
+                                var backgroundDefault = null;
+                
+                                if(target === 'adds-1') backgroundDefault = backgroundsImagesAdds.item_1;
+                                if(target === 'adds-2') backgroundDefault =  backgroundsImagesAdds.item_2;
+                                if(target === 'adds-3') backgroundDefault = backgroundsImagesAdds.item_3;
+                
+                                if(backgroundDefault.display){
+                                    $(this).css('background-image',`url('${backgroundDefault.url}')`);
+                                }else{
+                                    $(this).css('background-color',`${backgroundDefault.color}`);
+                                }
+                
+                                /*console.log(this);
+                                $(this).css('background-color','#90d027');*/
+                            })
+                        }
+                
+                        loaditems();
+                
+                        // jajajaja se me olvido llamar la funcion xd
+                
+                    });
+                </script>
+                </body>
+                </html>
